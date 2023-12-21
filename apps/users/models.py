@@ -28,7 +28,8 @@ class User(AbstractUser):
         verbose_name="Дата создания"
     )
     age = models.PositiveIntegerField(
-        verbose_name="Возраст"
+        verbose_name="Возраст",
+        blank=True, null=True
     )
 
     def __str__(self) -> str:
